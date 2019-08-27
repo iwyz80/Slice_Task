@@ -4,7 +4,9 @@
   "description": "This is a coding challenge",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tests": "jest --watchAll",
+    "test:util": "jest  src/util.test.js --watch",
+    "test": "jest src/index.test.js --watch"
   },
   "keywords": [
     "pizzabot"
@@ -13,5 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
   }
 }
